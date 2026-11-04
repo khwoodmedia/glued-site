@@ -2,6 +2,7 @@ GLUED WEBSITE MOCKUP
 
 Files:
 - index.html
+- archives.html
 - styles.css
 - script.js
 
