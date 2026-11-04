@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="The Archives — every artist GLUED has printed, floating." />
+  <title>The Archives · GLUED Magazine</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500&family=Courier+Prime:wght@400;700&family=Special+Elite&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="archives.css" />
+</head>
+<body>
+  <div class="page">
+
+    <header class="masthead">
+      <a class="logo" href="index.html">GLUED</a>
+      <nav class="nav" aria-label="Main">
+        <a href="index.html">Home</a>
+        <a href="archives.html" aria-current="page">Archive</a>
+        <a href="index.html#contact">About</a>
+      </nav>
+    </header>
+
+    <section class="intro">
+      <div>
+        <h1>The Archives</h1>
+        <p>We cover culture. Click to read the story.</p>
+      </div>
+      <div class="chips" id="chips" role="group" aria-label="Filter by role"></div>
+    </section>
+
+    <section class="stage" id="stage" aria-label="Floating artist names">
+      <div class="scrim" id="scrim" hidden></div>
+      <aside class="panel" id="panel" role="dialog" aria-labelledby="p-artist" hidden>
+        <div class="panel-top">
+          <span class="panel-kind" id="p-kind"></span>
+          <button class="close" id="p-close" aria-label="Close story panel">X</button>
+        </div>
+        <div class="panel-body">
+          <div>
+            <h2 class="artist" id="p-artist"></h2>
+            <div class="meta" id="p-meta"></div>
+          </div>
+          <div class="story-tabs" id="p-tabs" role="tablist" aria-label="Stories" hidden></div>
+          <h3 class="headline" id="p-headline"></h3>
+          <div class="byline" id="p-byline"></div>
+          <div class="story" id="p-story"></div>
+          <blockquote class="quote" id="p-quote"></blockquote>
+        </div>
+        <div class="panel-actions">
+          <a class="btn btn-solid" id="p-link" href="#" hidden>INSTAGRAM</a>
+          <button class="btn btn-line" id="p-next">NEXT NAME</button>
+        </div>
+      </aside>
+    </section>
+
+    <footer class="foot">
+      <span id="count"></span>
+    </footer>
+
+  </div>
+
+  <script src="archives.js"></script>
+</body>
+</html>
