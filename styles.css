@@ -1,5 +1,5 @@
 :root {
-  --bg: #f6f1e8;
+  --bg: #F7F7F5;
   --ink: #0b0b0b;
   --muted: #7c776f;
   --line: rgba(11, 11, 11, 0.7);
@@ -25,7 +25,10 @@ a:focus-visible, .magazine:focus-visible {
 .site-header {
   position: relative;
   z-index: 10;
-  padding: 28px 5vw 0;
+  margin-top: 20px;
+  padding: 14px 5vw;
+  border-top: 2px solid var(--ink);
+  border-bottom: 2px solid var(--ink);
 }
 
 .nav {
@@ -46,8 +49,10 @@ a:focus-visible, .magazine:focus-visible {
   grid-column: 1 / -1;
   grid-row: 1;
   justify-self: center;
+  text-align: center;
+  white-space: normal;
   font-family: Arial, Helvetica, sans-serif;
-  font-size: clamp(28px, 4vw, 40px);
+  font-size: clamp(28px, 5.5vw, 64px);
   font-weight: 900;
   letter-spacing: -0.06em;
 }
@@ -131,6 +136,7 @@ h1 {
   justify-content: center;
   writing-mode: vertical-rl;
   text-orientation: mixed;
+  font-family: Arial, Helvetica, sans-serif;
   font-size: 12px;
   font-weight: 800;
   letter-spacing: .08em;
@@ -139,6 +145,7 @@ h1 {
 .cover-kicker { font-size: 6px; letter-spacing: .18em; }
 .cover-title {
   margin-top: 2px;
+  font-family: Arial, Helvetica, sans-serif;
   font-size: 34px;
   font-weight: 900;
   letter-spacing: -0.07em;
@@ -169,6 +176,7 @@ h1 {
   position: absolute;
   bottom: 18px;
   left: 18px;
+  font-family: Arial, Helvetica, sans-serif;
   font-size: 28px;
   font-weight: 900;
   line-height: .86;
@@ -238,7 +246,7 @@ h1 {
     font-size: 13px;
   }
   .brand {
-    font-size: 32px;
+    font-size: 28px;
   }
 
   .hero { padding-top: 50px; }
